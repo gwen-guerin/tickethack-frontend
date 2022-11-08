@@ -89,11 +89,14 @@ main {
 .cards{
     background-color: white;
     width: 35%;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     border-radius: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 #departure-arrival{
