@@ -122,3 +122,7 @@ form {
     width: 90%;
     height: 30px;
 }
+a {
+    text-decoration:none;
+    color: black;
+}
