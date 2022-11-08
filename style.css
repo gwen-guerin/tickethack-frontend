@@ -1,0 +1,64 @@
+body {
+    margin: 0px;
+    width: auto;
+    text-align: center;
+}
+
+/* HEADER POUR TOUTES LES PAGES */
+
+header {
+    width: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    /* padding: 10px; */
+    /* margin: 10px; */
+    border-bottom: 1px solid black;
+
+}
+.siteName {
+    color: rgb(83, 204, 138);
+    font-weight: bolder;
+    margin: 15px;
+    font-size: larger;
+
+}
+.carts_bookings {
+    display: flex;
+    /* padding: 5px; */
+    padding-right: 15px;
+    font-weight: bold;
+}
+.cart {
+    margin: 10px;
+
+}
+.booking {
+    margin: 10px;
+}
+
+main {
+    background-color: rgba(197, 203, 197, 0.63);
+    display: flex;
+    justify-content: center;
+    text-align: center ;
+    height: 100vh;
+
+}
+.container {
+    margin-top: 30vh;
+    background-color: white;
+    width: 50%;
+    height: 30vh;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.numInCart, .numOfBookings {
+    margin-bottom: 5vh;
+}
+
