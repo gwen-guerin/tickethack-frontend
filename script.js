@@ -33,8 +33,8 @@ document.querySelector('#submitButton').addEventListener('click', function () {
           </div>`;
         }
       }
+      clickOnBook()
     });
-  clickOnBook()
 });
 
 function clickOnBook(){
