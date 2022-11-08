@@ -16,3 +16,14 @@ document.querySelector('#submitButton').addEventListener('click', function(){
 })
 
 
+for (const bookTrip of document.getElementsByClassName('book')) {
+    // console.log(bookTrip.parentNode.textContent)
+    bookTrip.addEventListener('click', () => {
+        console.log(bookTrip.parentNode)
+
+    })
+}
+
+
+
+document.get
