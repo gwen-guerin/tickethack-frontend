@@ -1,44 +1,55 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Tickethack - Homepage </title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tickethack - Homepage</title>
+  </head>
+  <body>
     <header class="header">
-        <div class="siteName" href="#">Tickethack</div>
-        <div class="carts_bookings">
-          <div class="cart">Cart</div>
-          <div class="booking">Bookings</div>
+      <a href="./index.html"><div class="siteName">Tickethack</div></a>
+      <div class="carts_bookings">
+        <a href="./cart.html"><div class="cart">Cart</div></a>
+        <a href="./bookings.html"><div class="booking">Bookings</div></a>
+      </div>
+    </header>
+    <div id="container-hp">
+      <div id="TitleContainer">
+        <h1>Explore the world effortlessly by train</h1>
+        <h2>
+          Compare, book and enjoy cheap prices for train tickets : your journey
+          starts on Tickethack
+        </h2>
+      </div>
+      <div id="cardcontainer">
+        <div class="cards" id="form-container">
+          <div id="departure-arrival">
+            <input
+              type="text"
+              id="departure"
+              placeholder="Departure"
+              class="forminputs"
+            />
+            <input
+              type="text"
+              id="arrival"
+              placeholder="Arrival"
+              class="forminputs"
+            />
+          </div>
+          <input type="date" id="date" class="forminputs" />
+          <input type="submit" id="submitButton" value="Search" />
         </div>
-      </header>
-    <div id = "container-hp">
-        <div id = "TitleContainer">
-            <h1>Explore the world effortlessly by train</h1>
-            <h2>Compare, book and enjoy cheap prices for train tickets : your journey starts on Tickethack </h2>
+        <div class="cards" id="trips-container">
+          <img id="train-image" src="./images/train.png" />
+          <hr />
+          <!-- <div id="trip-list">Voyage voyage.... plus loin ue la vie et le jour. <button class="book">Book</button></div> -->
+          <p>It is time to book your future trip</p>
         </div>
-        <div id = "cardcontainer">
-            <div class = "cards" id="form-container">
-                <form>
-                    <div id = "departure-arrival">
-                    <input type = "text" id ="departure" placeholder="Departure" class="forminputs"></form>
-                    <input type = "text" id="arrival" placeholder="Arrival" class="forminputs"></form>
-                </div>
-                    <input type="date" id = "date" class="forminputs">
-                    <input type="submit" id = "submitButton" value = "Search">
-                </form>
-            </div>
-            <div class = "cards" id="trips-container">
-                <img id = "train-image" src = "./images/train.png">
-                <hr>
-                <!-- <div id="trip-list">Voyage voyage.... plus loin ue la vie et le jour. <button class="book">Book</button></div> -->
-                <p>It is time to book your future trip</p>
-            </div>
-        </div>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
