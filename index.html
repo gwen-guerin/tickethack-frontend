@@ -5,11 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>TicketHack Homepage</title>
+    <title>Tickethack - Homepage </title>
 </head>
 <body>
-    
-
+    <div id = "container-hp">
+        <div id = "TitleContainer">
+            <h1>Explore the world effortlessly by train</h1>
+            <h2>Compare, book and enjoy cheap prices for train tickets : your journey starts on Tickethack </h2>
+        </div>
+        <div id = "cardcontainer">
+            <div class = "cards" id="form-container">
+                <form>
+                    <div id = "departure-arrival">
+                    <input type = "text" id ="departure" placeholder="Departure" class="forminputs"></form>
+                    <input type = "text" id="arrival" placeholder="Arrival" class="forminputs"></form>
+                </div>
+                    <input type="date" id = "date" class="forminputs">
+                    <input type="submit" id = "submitButton" value = "Search">
+                </form>
+            </div>
+            <div class = "cards" id="trips-container">
+                <img id = "train-image" src = "./images/train.png">
+                <hr>
+                <p>It is time to book your future trip</p>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

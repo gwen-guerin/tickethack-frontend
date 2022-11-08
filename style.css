@@ -62,3 +62,59 @@ main {
     margin-bottom: 5vh;
 }
 
+#TitleContainer{
+    color: white;
+    padding-top: 7%;
+    margin-bottom :5% 
+
+}
+
+#container-hp{
+    background-image: url("./images/background.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+#cardcontainer{
+    display: flex;
+    justify-content:space-around;
+    width: 70%;
+    margin: 0px auto;
+    
+}
+
+.cards{
+    background-color: white;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#departure-arrival{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#train-image{
+    height: 30%;
+    width: auto;
+}
+
+hr {
+    width: 60%;
+    color: #4fa790;
+}
+
+form {
+    width: 90%;
+}
+.forminputs{
+    width: 90%;
+    height: 30px;
+}
+T
