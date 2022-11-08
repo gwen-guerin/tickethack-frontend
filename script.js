@@ -32,15 +32,20 @@ document.querySelector('#submitButton').addEventListener('click', function () {
           <button class="book">Book</button> 
           </div>`;
         }
+        clickOnBook()
       }
     });
+    
 });
 
-for (const bookTrip of document.getElementsByClassName('book')) {
-  // console.log(bookTrip.parentNode.textContent)
-  bookTrip.addEventListener('click', () => {
-    console.log("coucou");
-  });
+function clickOnBook(){
+  for (const bookTrip of document.getElementsByClassName('book')) {
+    // console.log(bookTrip.parentNode.textContent)
+    bookTrip.addEventListener('click', () => {
+      console.log("coucou");
+    });
+  }
 }
+
 
 // document.get;
