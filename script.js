@@ -26,16 +26,15 @@ document.querySelector('#submitButton').addEventListener('click', function () {
           ).innerHTML += `<div class="tripAvailable"> 
           <p><span class = "tripToChoose">${item.departure} > ${
             item.arrival
-          }</span> <span class="hour">${date.getHours()}:${date.getMinutes()}</span> <span class="price>"${
+          }</span> <span class="hour">${moment(date).format("HH:MM")}</span> <span class="price">${
             item.price
           }€ </span></p> 
           <button class="book">Book</button> 
           </div>`;
         }
-        clickOnBook()
       }
     });
-    
+  clickOnBook()
 });
 
 function clickOnBook(){
