@@ -146,7 +146,6 @@ a {
     height: 60vh;
     /*overflow-x: hidden; */
     overflow-y: auto;
-    scrollbar-color: rebeccapurple green;
     scrollbar-width: thin;
    
 }
