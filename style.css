@@ -16,7 +16,6 @@ header {
     height: 50px;
     /* padding: 10px; */
     /* margin: 10px; */
-    border-bottom: 1px solid black;
 
 }
 .siteName {
@@ -46,20 +45,20 @@ main {
     display: flex;
     justify-content: center;
     text-align: center ;
-    height: 100vh;
+    height: 90vh;
 
 }
 .container {
-    margin-top: 30vh;
     background-color: white;
     width: 50%;
-    height: 30%;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
-    /* text-align: center; */
-    padding: 5vh 5vw;
+    padding: 2vh 5vw;
+    height: 80%;
+    margin: 30px auto;
+    overflow-y : auto;
+    overflow-x: hidden;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.32);
 }
 .placeholder, .numOfBookings {
     margin-bottom: 5vh;
@@ -192,4 +191,29 @@ button {
     width: 50%;
 }
 
-/* Hello */
+/* Page cart */
+
+footer{
+    text-align: center;
+    background-color: #06143e;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#footer-elem{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px auto 0px auto;
+    width: 40%;
+    color: white;
+}

@@ -7,8 +7,8 @@
 
 }
 .tripContainer {
-    margin: auto;
-    width: 80%;
+    margin:  10px auto;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -16,13 +16,4 @@
     background-color: rgba(197, 203, 197, 0.63);
     padding: 3vh 3vw;
     border-radius: 10px;
-
-}
-.cartFooter {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    /* margin: auto;
-    padding: 3vh 3vw; */
-    background-color: rgb(28, 78, 129);
 }

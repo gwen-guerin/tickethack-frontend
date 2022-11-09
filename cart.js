@@ -1,7 +1,7 @@
 
-window.addEventListener('load', () => {
 
-  fetch('http://localhost:3000/trips/cart')
+window.addEventListener("load", () => {
+    fetch('http://localhost:3000/trips/cart')
     .then((response) => response.json())
     .then((carts) => {
       console.log(carts.carts);
@@ -14,7 +14,6 @@ window.addEventListener('load', () => {
           const trip = item.trip;
           const hour = item.date;
           const price = item.price;
-          // console.log(trip, hour, price);
           document.getElementById('containerCart').innerHTML += 
           `     <div class="tripContainer">
                 <div class="myTrip"> ${trip}</div>
