@@ -26,27 +26,25 @@ document.querySelector('#submitButton').addEventListener('click', function () {
           ).innerHTML += `<div class="tripAvailable"> 
           <p><span class = "tripToChoose">${item.departure} > ${
             item.arrival
-          }</span> <span class="hour">${date.getHours()}:${date.getMinutes()}</span> <span class="price>"${
+          }</span> <span class="hour">${moment(date).format("HH:MM")}</span> <span class="price">${
             item.price
           }€ </span></p> 
           <button class="book">Book</button> 
           </div>`;
         }
       }
+      clickOnBook()
     });
-    for (const bookTrip of document.getElementsByClassName('book')) {
-        // console.log(bookTrip.parentNode.textContent)
-        bookTrip.addEventListener('click', () => {
-          console.log("coucou");
-        });
-      }
 });
 
-for (const bookTrip of document.querySelectorAll('.book')) {
-  // console.log(bookTrip.parentNode.textContent)
-  bookTrip.addEventListener('click', () => {
-    console.log("coucou");
-  });
+function clickOnBook(){
+  for (const bookTrip of document.getElementsByClassName('book')) {
+    // console.log(bookTrip.parentNode.textContent)
+    bookTrip.addEventListener('click', () => {
+      console.log("coucou");
+    });
+  }
 }
+
 
 // document.get;
