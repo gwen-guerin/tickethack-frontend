@@ -18,19 +18,24 @@ document.querySelector('#submitButton').addEventListener('click', function () {
         <hr>
         <p>No Trip Found</p>`;
       } else {
-        document.querySelector('#trips-container').innerHTML = '';
+        document.querySelector('#trip-list').innerHTML = '';
         for (let item of data.trips) {
           const date = new Date(item.date.$date);
           document.querySelector(
-            '#trips-container'
-          ).innerHTML += `<div class="tripAvailable"> 
-          <p><span class = "tripToChoose">${item.departure} > ${
-            item.arrival
-          }</span> <span class="hour">${moment(date).format("HH:MM")}</span> <span class="price">${
-            item.price
-          }€ </span></p> 
-          <button class="book">Book</button> 
+            '#trip-list'
+          ).innerHTML += 
+          `<div class="tripAvailable"> 
+          <span class = "tripToChoose trip-infos">${item.departure} > ${item.arrival}</span> 
+          <span class="hour trip-infos">${moment(date).format("HH:MM")}</span> 
+          <span class="price trip-infos">${item.price}€ </span>
+          <button class="book trip-infos">Book</button> 
           </div>`;
+        }
+        if(data.trips.length > 6){
+          console.log(data)
+          document.querySelector('#trip-list').style.marginTop = "65vh"; 
+        } else {
+          document.querySelector('#trip-list').style.marginTop = "0px";
         }
       }
       clickOnBook()
@@ -39,12 +44,8 @@ document.querySelector('#submitButton').addEventListener('click', function () {
 
 function clickOnBook(){
   for (const bookTrip of document.getElementsByClassName('book')) {
-    // console.log(bookTrip.parentNode.textContent)
     bookTrip.addEventListener('click', () => {
       console.log("coucou");
     });
   }
 }
-
-
-// document.get;
