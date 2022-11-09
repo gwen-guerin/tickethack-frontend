@@ -48,10 +48,11 @@ document.querySelector('#submitButton').addEventListener('click', function () {
 function clickOnBook(){
   for (const bookTrip of document.getElementsByClassName('book')) {
     bookTrip.addEventListener('click', () => {
-      let trip = document.getElementsByClassName('tripToChoose').textContent
-      let date = document.getElementsByClassName('hour').textContent
-      let price = document.getElementsByClassName('price').textContent
-      fetch('http://localhost:3000/trips', {
+      let trip = document.getElementsByClassName('tripToChoose')[0].textContent
+      console.log(trip);
+      let date = document.getElementsByClassName('hour')[0].textContent
+      let price = document.getElementsByClassName('price')[0].textContent
+      fetch('http://localhost:3000/trips/cart', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ trip, date, price }),

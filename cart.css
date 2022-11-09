@@ -1,0 +1,28 @@
+.cartHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: none;
+    padding: 3vh 3vw;
+
+}
+.tripContainer {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(197, 203, 197, 0.63);
+    padding: 3vh 3vw;
+    border-radius: 10px;
+
+}
+.cartFooter {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* margin: auto;
+    padding: 3vh 3vw; */
+    background-color: rgb(28, 78, 129);
+}

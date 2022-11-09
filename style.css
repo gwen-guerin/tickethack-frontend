@@ -53,14 +53,15 @@ main {
     margin-top: 30vh;
     background-color: white;
     width: 50%;
-    height: 30vh;
+    height: 30%;
     border: 1px solid black;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-evenly;
+    /* text-align: center; */
+    padding: 5vh 5vw;
 }
-.numInCart, .numOfBookings {
+.placeholder, .numOfBookings {
     margin-bottom: 5vh;
 }
 
