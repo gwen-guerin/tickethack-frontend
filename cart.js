@@ -8,11 +8,11 @@ window.addEventListener("load", () => {
         const hour = carts.carts[0].date
         const price = carts.carts[0].price
         document.getElementById('containerCart').innerHTML = 
-        `<div>My cart</div>
-        <div> ${trip}</div>
-        <div>${hour}</div>
-        <div>${price}</div>
-        <footer><div>Total : 4000</div><button>Purchase</button>`
+        // `<div>My cart</div>
+        // <div> ${trip}</div>
+        // <div>${hour}</div>
+        // <div>${price}</div>
+        // <footer><div>Total : 4000</div><button>Purchase</button>`
     })
 })
 

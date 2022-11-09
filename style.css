@@ -46,7 +46,7 @@ main {
     display: flex;
     justify-content: center;
     text-align: center ;
-    height: 100vh;
+    height: 90vh;
 
 }
 .container {
@@ -191,4 +191,29 @@ button {
     width: 50%;
 }
 
-/* Hello */
+/* Page cart */
+
+footer{
+    text-align: center;
+    background-color: #06143e;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#footer-elem{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px auto 0px auto;
+    width: 40%;
+    color: white;
+}
