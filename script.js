@@ -1,9 +1,11 @@
+// import {clickOnBook} from './cart.js'
+
 document.querySelector('#submitButton').addEventListener('click', function () {
   const departure = document.querySelector('#departure').value;
   const arrival = document.querySelector('#arrival').value;
   const date = document.querySelector('#date').value;
 
-  console.log(document.querySelector('#departure').value);
+  // console.log(document.querySelector('#departure').value);
   fetch('http://localhost:3000/trips', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -38,6 +40,7 @@ document.querySelector('#submitButton').addEventListener('click', function () {
           document.querySelector('#trip-list').style.marginTop = "0px";
         }
       }
+
       clickOnBook()
     });
 });
@@ -45,7 +48,18 @@ document.querySelector('#submitButton').addEventListener('click', function () {
 function clickOnBook(){
   for (const bookTrip of document.getElementsByClassName('book')) {
     bookTrip.addEventListener('click', () => {
-      console.log("coucou");
+      let trip = document.getElementsByClassName('tripToChoose').textContent
+      let date = document.getElementsByClassName('hour').textContent
+      let price = document.getElementsByClassName('price').textContent
+      fetch('http://localhost:3000/trips', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ trip, date, price }),
+      })
+        .then((response) => response.json())
+        .then((data) => {console.log(data);})
+        document.location.href="./cart.html"
+
     });
   }
 }
