@@ -16,7 +16,6 @@ header {
     height: 50px;
     /* padding: 10px; */
     /* margin: 10px; */
-    border-bottom: 1px solid black;
 
 }
 .siteName {
@@ -50,16 +49,16 @@ main {
 
 }
 .container {
-    margin-top: 30vh;
     background-color: white;
     width: 50%;
-    height: 30%;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
-    /* text-align: center; */
-    padding: 5vh 5vw;
+    padding: 2vh 5vw;
+    height: 80%;
+    margin: 30px auto;
+    overflow-y : auto;
+    overflow-x: hidden;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.32);
 }
 .placeholder, .numOfBookings {
     margin-bottom: 5vh;
