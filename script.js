@@ -34,9 +34,15 @@ document.querySelector('#submitButton').addEventListener('click', function () {
         }
       }
     });
+    for (const bookTrip of document.getElementsByClassName('book')) {
+        // console.log(bookTrip.parentNode.textContent)
+        bookTrip.addEventListener('click', () => {
+          console.log("coucou");
+        });
+      }
 });
 
-for (const bookTrip of document.getElementsByClassName('book')) {
+for (const bookTrip of document.querySelectorAll('.book')) {
   // console.log(bookTrip.parentNode.textContent)
   bookTrip.addEventListener('click', () => {
     console.log("coucou");
